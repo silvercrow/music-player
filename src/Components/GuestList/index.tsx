@@ -1,7 +1,7 @@
 import moment from 'moment';
 import React from 'react';
 import { Time } from 'tone/build/esm/core/type/Units';
-import { Table, Thead, TR, Tbody, TD } from './styles';
+import { TableBox, Table, Thead, TR, Tbody, TD } from './styles';
 
 interface User {
   ID: number;
@@ -21,30 +21,32 @@ const converToTime = (timeData: string) => moment(timeData).format('DD MMM YYYY 
 
 const Guestlist: React.FC<GuestlistProps> = ({ users }: GuestlistProps) => {
   return (
-    <Table>
-      <Thead>
-        <TR>
-          <TD>ID</TD>
-          <TD>Name</TD>
-          <TD>Email</TD>
-          <TD>Created</TD>
-          <TD>Updated</TD>
-        </TR>
-      </Thead>
-      <Tbody>
-        {users.map((item, index: number) => {
-          return (
-            <TR key={index}>
-              <TD>{item.ID}</TD>
-              <TD>{item.name}</TD>
-              <TD>{item.email}</TD>
-              <TD>{converToTime(String(item.CreatedAt))}</TD>
-              <TD>{converToTime(String(item.UpdatedAt))}</TD>
-            </TR>
-          );
-        })}
-      </Tbody>
-    </Table>
+    <TableBox>
+      <Table>
+        <Thead>
+          <TR>
+            <TD>ID</TD>
+            <TD>Name</TD>
+            <TD>Email</TD>
+            <TD>Created</TD>
+            <TD>Updated</TD>
+          </TR>
+        </Thead>
+        <Tbody>
+          {users.map((item, index: number) => {
+            return (
+              <TR key={index}>
+                <TD>{item.ID}</TD>
+                <TD>{item.name}</TD>
+                <TD>{item.email}</TD>
+                <TD>{converToTime(String(item.CreatedAt))}</TD>
+                <TD>{converToTime(String(item.UpdatedAt))}</TD>
+              </TR>
+            );
+          })}
+        </Tbody>
+      </Table>
+    </TableBox>
   );
 };
 

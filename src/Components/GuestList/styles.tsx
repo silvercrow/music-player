@@ -18,7 +18,9 @@ export const GuestlistBox = styled.ul`
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   }
 `;
-
+export const TableBox = styled.table`
+  overflow-x: auto;
+`;
 export const Table = styled.table`
   border-spacing: 1;
   border-collapse: collapse;
