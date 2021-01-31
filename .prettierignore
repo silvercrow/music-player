@@ -1,0 +1,8 @@
+.docz/
+.deploy/
+dist/
+build/
+node_modules/
+
+## minified files
+*.min.*
