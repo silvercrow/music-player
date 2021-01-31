@@ -5,7 +5,7 @@ import { ConchaApiState } from './Slices/ApiSlice';
 import ConchaApiReducer from './Slices/ApiSlice';
 import AudioEQSliceReducer from './Slices/AudioEQSlice';
 import { AudioEQState } from './Slices/AudioEQSlice';
-import { firebaseReducer, FirebaseReducer, getFirebase, actionTypes as rrfActionTypes } from 'react-redux-firebase';
+import { firebaseReducer, getFirebase, actionTypes as rrfActionTypes } from 'react-redux-firebase';
 
 export type AppThunk = ThunkAction<void, AudioEQState, unknown, Action<string>>;
 export type ApiThunk = ThunkAction<void, ConchaApiState, unknown, Action<string>>;
@@ -37,6 +37,7 @@ const rootReducer = combineReducers({
 
 export type RootState = ReturnType<typeof rootReducer>;
 
+//Turn redux dev tools on for development
 const store = configureStore({
   reducer: {
     AudioEQStore: AudioEQSliceReducer,
@@ -44,6 +45,7 @@ const store = configureStore({
     firebase: firebaseReducer,
   },
   middleware: middleware,
+  devTools: false,
 });
 
 export default store;

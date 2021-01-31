@@ -1,9 +1,11 @@
+import env from 'react-dotenv';
+
 export const config = {
-  apiKey: '',
-  authDomain: '',
-  databaseURL: '',
-  projectId: '',
-  appId: '',
-  storageBucket: '',
-  messagingSenderId: '',
+  apiKey: env.FIREBASEAPIKEY,
+  authDomain: env.FIREBASEAUTHDOMAIN,
+  databaseURL: env.FIREBASEDATABASEURL,
+  projectId: env.FIREBASEPROJECTID,
+  appId: env.FIREBASEAPPID,
+  storageBucket: env.FIREBASESTORAGEBUCKET,
+  messagingSenderId: env.FIREBASEMESSAGINGSENDERID,
 };
