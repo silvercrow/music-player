@@ -4,7 +4,7 @@ export const MusicBox = styled.div`
   font-family: 'DM-sans', sans-serif;
   display: flex;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 101vh;
   margin-top: 20px;
 `;
 
