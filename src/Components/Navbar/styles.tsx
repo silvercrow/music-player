@@ -31,6 +31,12 @@ export const Logo = styled.div`
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #46505f;
+
+  @media (max-width: 375px) {
+    background: none !important;
+    padding-left: 19px !important;
+    margin: auto -15px !important;
+  }
 `;
 
 export const Menu = styled.div`
@@ -39,13 +45,12 @@ export const Menu = styled.div`
 `;
 
 export const MenuItem = styled.div`
-  margin-right: 30px;
   font-size: 1em;
   font-family: Merriweather;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  margin: auto 32px;
+  margin: auto 10px;
   display: flex;
   align-items: center;
   text-align: center;
