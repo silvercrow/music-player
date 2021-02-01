@@ -29,7 +29,7 @@ const EQMusicPlayer: React.FC = () => {
 
   useEffect(() => {
     return () => {
-      pauseSong();
+      dispatch(pauseSong());
     };
   }, []);
 
