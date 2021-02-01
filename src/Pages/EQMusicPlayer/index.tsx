@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import CompactView from '../../Components/CompactView';
 import MaximizedView from '../../Components/MaximizedView';
@@ -26,6 +26,12 @@ interface SongData {
 const EQMusicPlayer: React.FC = () => {
   const dispatch = useDispatch();
   const { isModalOpen, isMiniPlayerOpen, currentSong, isPlayingAudio } = useSelector(AudioEQSelector);
+
+  useEffect(() => {
+    return () => {
+      pauseSong();
+    };
+  }, []);
 
   return (
     <BasicTemplate>

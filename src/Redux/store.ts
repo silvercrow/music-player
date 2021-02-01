@@ -45,7 +45,7 @@ const store = configureStore({
     firebase: firebaseReducer,
   },
   middleware: middleware,
-  devTools: false,
+  devTools: true,
 });
 
 export default store;
