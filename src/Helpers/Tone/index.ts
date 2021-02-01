@@ -5,6 +5,10 @@ export const highPassFrequency = 4000;
 export const bandPassCenter = (highPassFrequency + lowPassFrequency) / 2;
 export const bandpassQ = bandPassCenter / (highPassFrequency - lowPassFrequency);
 
+export const lowPassGain = new Tone.Gain();
+export const bandPassGain = new Tone.Gain();
+export const highPassGain = new Tone.Gain();
+
 export const audioPlayer = new Tone.Player({
   url: '/audio/titanic.mp3',
   loop: true,
@@ -29,5 +33,3 @@ export const highpassFilter = new Tone.BiquadFilter({
   frequency: 4000,
   gain: 0,
 });
-
-audioPlayer.connect(lowpassFilter).connect(bandpassFilter).connect(highpassFilter);

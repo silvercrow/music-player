@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import * as Tone from 'tone';
 import {
   lowPassFrequency,
   highPassFrequency,
@@ -8,6 +9,9 @@ import {
   lowpassFilter,
   bandpassFilter,
   highpassFilter,
+  lowPassGain,
+  bandPassGain,
+  highPassGain,
 } from '../../Helpers/Tone';
 import { AppThunk } from '../store';
 
@@ -98,38 +102,23 @@ export const pauseSong = (): AppThunk => {
   };
 };
 export const changeLowPass = (value: number): AppThunk => {
-  lowpassFilter
-    .set({
-      type: 'lowpass',
-      frequency: lowPassFrequency,
-      gain: Number(value),
-    })
-    .toDestination();
+  lowPassGain.gain.setValueAtTime(value, Tone.Transport.now());
+  audioPlayer.chain(lowpassFilter, lowPassGain, Tone.Destination);
   return async (dispatch) => {
     dispatch(setLowPassValue(value));
   };
 };
 export const changeBandPass = (value: number): AppThunk => {
-  bandpassFilter
-    .set({
-      type: 'bandpass',
-      frequency: bandPassCenter,
-      Q: bandpassQ,
-      gain: Number(value),
-    })
-    .toDestination();
+  bandPassGain.gain.setValueAtTime(value, Tone.Transport.now());
+  audioPlayer.chain(bandpassFilter, lowPassGain, Tone.Destination);
   return async (dispatch) => {
     dispatch(setBandPassValue(value));
   };
 };
 export const changeHighPass = (value: number): AppThunk => {
-  highpassFilter
-    .set({
-      type: 'highpass',
-      frequency: highPassFrequency,
-      gain: Number(value),
-    })
-    .toDestination();
+  highPassGain.gain.setValueAtTime(value, Tone.Transport.now());
+  audioPlayer.chain(bandpassFilter, highPassGain, Tone.Destination);
+
   return async (dispatch) => {
     dispatch(setHighPassValue(value));
   };
