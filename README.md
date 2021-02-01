@@ -16,6 +16,18 @@
 npm install
 ```
 
+> on the project root create a file with the name .env and add valid firebase configuration values example:
+
+```sh
+FIREBASEAPIKEY=
+FIREBASEAUTHDOMAIN=
+FIREBASEDATABASEURL=
+FIREBASEPROJECTID=
+FIREBASEAPPID=
+FIREBASESTORAGEBUCKET=
+FIREBASEMESSAGINGSENDERID=
+```
+
 > run app
 
 ```sh
