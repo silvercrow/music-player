@@ -110,7 +110,7 @@ export const changeLowPass = (value: number): AppThunk => {
 };
 export const changeBandPass = (value: number): AppThunk => {
   bandPassGain.gain.setValueAtTime(value, Tone.Transport.now());
-  audioPlayer.chain(bandpassFilter, lowPassGain, Tone.Destination);
+  audioPlayer.chain(bandpassFilter, bandPassGain, Tone.Destination);
   return async (dispatch) => {
     dispatch(setBandPassValue(value));
   };
