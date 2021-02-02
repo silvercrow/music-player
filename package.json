@@ -51,7 +51,7 @@
   "scripts": {
     "start": "react-dotenv && react-scripts start",
     "build": "react-dotenv && react-scripts build",
-    "test": "react-dotenv && react-scripts test",
+    "test": "react-dotenv && react-scripts test --verbose",
     "eject": "react-scripts eject",
     "ts:build": "tsc --noEmit",
     "lint": "run-s ts:build lint:fix",
