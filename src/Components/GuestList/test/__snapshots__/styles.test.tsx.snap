@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TD 1`] = `
+.c0 {
+  padding-left: 8px;
+  text-align: left;
+  border-bottom: solid 1px #bdcad9;
+}
+
+<td
+  className="c0"
+/>
+`;
+
+exports[`TR 1`] = `
+.c0 {
+  height: 60px;
+  background-color: #ffff;
+  height: 50px;
+}
+
+.c0:hover {
+  -webkit-box-shadow: inset 1px 1px 52px -24px #ababab,5px 5px 5px 1px #dddddd;
+  -moz-box-shadow: inset 1px 1px 52px -24px #ababab,5px 5px 5px 1px #dddddd;
+  -o-box-shadow: inset 1px 1px 52px -24px #ababab,5px 5px 5px 1px #dddddd;
+  background-color: #bdcad9;
+  background-image: linear-gradient(315deg,#bdcad9 0%,#e1dada 74%);
+}
+
+<tr
+  className="c0"
+/>
+`;
+
+exports[`Table 1`] = `
+.c0 {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+}
+
+<table
+  className="c0"
+/>
+`;
+
+exports[`TableBox 1`] = `
+.c0 {
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Tbody 1`] = `
+<tbody
+  className=""
+/>
+`;
+
+exports[`Thead 1`] = `
+.c0 {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+<thead
+  className="c0"
+/>
+`;

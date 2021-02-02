@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 70px;
+  color: #46505f;
+  z-index: 50;
+  background-color: #ffffff;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.08);
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Logo 1`] = `
+.c0 {
+  background: url(logo.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  margin-left: 20px;
+  padding-left: 40px;
+  padding-top: 4px;
+  height: 30px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  margin: auto 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.2em;
+  -moz-letter-spacing: 0.2em;
+  -ms-letter-spacing: 0.2em;
+  letter-spacing: 0.2em;
+  color: #46505f;
+}
+
+@media (max-width:375px) {
+  .c0 {
+    background: none !important;
+    padding-left: 19px !important;
+    margin: auto -15px !important;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Menu 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`MenuItem 1`] = `
+.c0 {
+  font-size: 1em;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  margin: auto 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.2em;
+  -moz-letter-spacing: 0.2em;
+  -ms-letter-spacing: 0.2em;
+  letter-spacing: 0.2em;
+  color: #46505f;
+}
+
+.c0 a:link {
+  color: #46505f;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:visited {
+  color: #46505f;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:hover {
+  color: #46505f;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:active {
+  color: #46505f;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`SingOutButton 1`] = `
+.c0 {
+  color: #ffff;
+  background-color: red;
+  border-radius: 20px;
+  border: solid 1px #0000;
+  padding: 10px;
+  font-weight: inherit;
+}
+
+<button
+  className="c0"
+/>
+`;

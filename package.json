@@ -18,6 +18,7 @@
     "axios": "^0.21.1",
     "firebase": "^8.2.5",
     "history": "^5.0.0",
+    "jest-styled-components": "^7.0.3",
     "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -26,6 +27,7 @@
     "react-redux-firebase": "^3.10.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-test-renderer": "^17.0.1",
     "redux-auth-wrapper": "^3.0.0",
     "redux-firestore": "^0.14.0",
     "request": "^2.88.2",
@@ -69,6 +71,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-test-renderer": "^17.0.0",
     "@types/redux-auth-wrapper": "^2.0.9",
     "@typescript-eslint/eslint-plugin": "^4.14.1",
     "@typescript-eslint/parser": "^4.14.1",

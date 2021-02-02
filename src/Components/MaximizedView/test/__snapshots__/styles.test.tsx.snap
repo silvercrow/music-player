@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Arrow 1`] = `
+.c0 {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23536383' strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' class='feather feather-chevron-down' viewBox='0 0 24 24'%3E%3Cdefs/%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`Art 1`] = `
+.c0 img {
+  margin: 0 auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 200px;
+  height: 270px;
+  border: 0;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 0px 3px #000;
+  -moz-box-shadow: 0px 0px 3px #000;
+  -webkit-box-shadow: 0px 0px 3px #000;
+  -khtml-box-shadow: 0px 0px 3px #000;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`ButtonsBar 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`CloseButton 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  background-color: #ffff;
+}
+
+.c0:hover {
+  background-color: #ffcd00;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+<button
+  className="c0"
+/>
+`;
+
+exports[`CloseButtonBox 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Cover 1`] = `
+.c0 {
+  margin-top: 15px;
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`PlayButton 1`] = `
+.c0 {
+  display: none;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  margin: 0 auto;
+  background-color: #ffcd00;
+  border-radius: 12px;
+  padding: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' stroke='%23fff' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' class='feather feather-play' fill='%23fff'%3E%3Cpath d='M5 3l14 9-14 9V3z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+<button
+  className="c0"
+/>
+`;
+
+exports[`RangeBar 1`] = `
+.c0 {
+  margin-top: 20px;
+  border: solid 1px #bdcad9;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #bdcad9;
+  background-image: linear-gradient(315deg,#bdcad9 0%,#e1dada 64%);
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Shadow 1`] = `
+.c0 img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-46%);
+  -ms-transform: translateX(-46%);
+  transform: translateX(-46%);
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  width: 100%;
+  height: 190px;
+  z-index: -1;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`SongInfo 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`SongSubTitle 1`] = `
+.c0 {
+  color: #59657c;
+  font-size: 12px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`SongTitle 1`] = `
+.c0 {
+  margin-top: 10px;
+  color: #000;
+  font-weight: 600;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Square 1`] = `
+.c0 {
+  margin: 0 auto;
+  background-color: #ffff;
+  height: 14px;
+  width: 14px;
+  cursor: pointer;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`StopButton 1`] = `
+.c0 {
+  display: none;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  margin: 0 auto;
+  background-color: #ffcd00;
+  border-radius: 12px;
+  padding: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+<button
+  className="c0"
+/>
+`;
+
+exports[`VolumeTitle 1`] = `
+.c0 {
+  color: #59657c;
+  font-size: 12px;
+}
+
+<div
+  className="c0"
+/>
+`;
