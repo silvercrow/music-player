@@ -1,10 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import * as Tone from 'tone';
 import {
-  lowPassFrequency,
-  highPassFrequency,
-  bandPassCenter,
-  bandpassQ,
   audioPlayer,
   lowpassFilter,
   bandpassFilter,
@@ -117,7 +113,7 @@ export const changeBandPass = (value: number): AppThunk => {
 };
 export const changeHighPass = (value: number): AppThunk => {
   highPassGain.gain.setValueAtTime(value, Tone.Transport.now());
-  audioPlayer.chain(bandpassFilter, highPassGain, Tone.Destination);
+  audioPlayer.chain(highpassFilter, highPassGain, Tone.Destination);
 
   return async (dispatch) => {
     dispatch(setHighPassValue(value));
