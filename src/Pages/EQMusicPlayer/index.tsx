@@ -25,7 +25,7 @@ const EQMusicPlayer: React.FC = () => {
     return () => {
       dispatch(pauseSong());
     };
-  }, []);
+  }, [dispatch]);
 
   return (
     <BasicTemplate>
