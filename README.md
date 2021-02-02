@@ -1,5 +1,5 @@
 # AudioEqualizer
-> React, Redux, Tone.js, TypeScript Audio Equializer with songs playlist
+> React, Redux, Tone.js, Firebase, Styled Components, TypeScript Audio Equializer with songs playlist
 <p float="left">
 <img src="https://conchalabs-music-eq.s3.amazonaws.com/playlist.png" width="270" height="500" />
 <img src="https://conchalabs-music-eq.s3.amazonaws.com/player-open.png" width="270" height="500" />
@@ -9,6 +9,7 @@
 [See demo](http://conchalabs-music-eq.s3-website-us-east-1.amazonaws.com/)
 
 ## Installation and usage
+please use at least node v14.15.1
 
 > install packages
 
