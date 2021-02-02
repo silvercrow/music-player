@@ -1,13 +1,7 @@
 import React from 'react';
+import { SongData } from '../../Types/Music';
 import PlaylistItem from '../PlaylistItem';
 import { PlaylistBox } from './styles';
-
-interface SongData {
-  title: string;
-  subtitle: string;
-  image: string;
-  audio: string;
-}
 
 interface PlaylistProps {
   playlist: SongData[];

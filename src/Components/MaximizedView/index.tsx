@@ -1,4 +1,5 @@
 import React from 'react';
+import { SongData } from '../../Types/Music';
 import RangeSlider from '../RangeSlider';
 import {
   MaximizedBox,
@@ -18,13 +19,6 @@ import {
   CloseButtonBox,
   Arrow,
 } from './styles';
-
-interface SongData {
-  title: string;
-  subtitle: string;
-  image: string;
-  audio: string;
-}
 
 interface MaximizedViewProps {
   showMaximized: boolean;

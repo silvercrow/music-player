@@ -1,4 +1,5 @@
 import React from 'react';
+import { SongData } from '../../Types/Music';
 import {
   CompactBox,
   ExtendButton,
@@ -11,13 +12,6 @@ import {
   StopButton,
   Arrow,
 } from './styles';
-
-interface SongData {
-  title: string;
-  subtitle: string;
-  image: string;
-  audio: string;
-}
 
 interface CompactViewProps {
   showCompact: boolean;

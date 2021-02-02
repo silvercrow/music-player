@@ -1,25 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import * as Tone from 'tone';
-import {
-  audioPlayer,
-  lowpassFilter,
-  bandpassFilter,
-  highpassFilter,
-  lowPassGain,
-  bandPassGain,
-  highPassGain,
-} from '../../Helpers/Tone';
+import { audioPlayer, setGain } from '../../Helpers/Tone';
+import { SongData } from '../../Types/Music';
 import { AppThunk } from '../store';
 
-interface SongInfo {
-  title: string;
-  subtitle: string;
-  image: string;
-  audio: string;
-}
-
 export interface AudioEQState {
-  currentSong: SongInfo;
+  currentSong: SongData;
   isModalOpen: boolean;
   isMiniPlayerOpen: boolean;
   isPlayingAudio: boolean;
@@ -48,7 +33,7 @@ const AudioEQSlice = createSlice({
     setMiniPlayer: (state, { payload }: PayloadAction<boolean>) => {
       state.isMiniPlayerOpen = payload;
     },
-    setPlayingSong: (state, { payload }: PayloadAction<SongInfo>) => {
+    setPlayingSong: (state, { payload }: PayloadAction<SongData>) => {
       state.currentSong = payload;
     },
     setAudioIsPlaying: (state, { payload }: PayloadAction<boolean>) => {
@@ -56,12 +41,15 @@ const AudioEQSlice = createSlice({
     },
     setLowPassValue: (state, { payload }: PayloadAction<number>) => {
       state.lowPassValue = payload;
+      setGain(payload, 'lowpass');
     },
     setBandPassValue: (state, { payload }: PayloadAction<number>) => {
       state.bandPassValue = payload;
+      setGain(payload, 'bandpass');
     },
     setHighPassValue: (state, { payload }: PayloadAction<number>) => {
       state.highPassValue = payload;
+      setGain(payload, 'highpass');
     },
   },
 });
@@ -79,7 +67,7 @@ export default AudioEQSlice.reducer;
 export const AudioEQSelector = (state: { AudioEQStore: AudioEQState }) => state.AudioEQStore;
 
 // Player-Controls
-export const playSong = (song: SongInfo): AppThunk => {
+export const playSong = (song: SongData): AppThunk => {
   audioPlayer.load(song.audio).then(() => {
     audioPlayer.start();
   });
@@ -98,23 +86,16 @@ export const pauseSong = (): AppThunk => {
   };
 };
 export const changeLowPass = (value: number): AppThunk => {
-  lowPassGain.gain.setValueAtTime(value, Tone.Transport.now());
-  audioPlayer.chain(lowpassFilter, lowPassGain, Tone.Destination);
   return async (dispatch) => {
     dispatch(setLowPassValue(value));
   };
 };
 export const changeBandPass = (value: number): AppThunk => {
-  bandPassGain.gain.setValueAtTime(value, Tone.Transport.now());
-  audioPlayer.chain(bandpassFilter, bandPassGain, Tone.Destination);
   return async (dispatch) => {
     dispatch(setBandPassValue(value));
   };
 };
 export const changeHighPass = (value: number): AppThunk => {
-  highPassGain.gain.setValueAtTime(value, Tone.Transport.now());
-  audioPlayer.chain(highpassFilter, highPassGain, Tone.Destination);
-
   return async (dispatch) => {
     dispatch(setHighPassValue(value));
   };

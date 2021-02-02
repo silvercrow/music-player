@@ -1,17 +1,7 @@
 import moment from 'moment';
 import React from 'react';
-import { Time } from 'tone/build/esm/core/type/Units';
+import { User } from '../../Types/User';
 import { TableBox, Table, Thead, TR, Tbody, TD } from './styles';
-
-interface User {
-  ID: number;
-  CreatedAt: Time;
-  UpdatedAt: Time;
-  DeletedAt: Time;
-  firebase_uid: string;
-  name: string;
-  email: string;
-}
 
 interface GuestlistProps {
   users: User[];

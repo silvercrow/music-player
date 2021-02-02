@@ -14,14 +14,8 @@ import {
   changeBandPass,
   changeHighPass,
 } from '../../Redux/Slices/AudioEQSlice';
+import { SongData } from '../../Types/Music';
 import { MusicBox, MusicPlayer, Queue, PlayTitle } from './styles';
-
-interface SongData {
-  title: string;
-  subtitle: string;
-  image: string;
-  audio: string;
-}
 
 const EQMusicPlayer: React.FC = () => {
   const dispatch = useDispatch();
